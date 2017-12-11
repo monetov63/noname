@@ -46,9 +46,40 @@ body
 	overflow-x: hidden
 	opacity: 1
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+.rotate
+	width: 100px
+	height: 100px
+	background-color: $color
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: 0.5s
+	opacity: 0
+.inner-rotate
+	width: 50px
+	height: 50px
+	background-color: $color2
+	transition: 0.5s
+	opacity: 0
+.btn
+	background-color: $color
+	color: #fff
+	transition: 0.5s
+	font-size: 30px
+	border: 1px solid $color
+	padding: 15px 30px
+	&:hover
+		background-color: $color2
+		color: red
+.animate
+	transform: rotate(270deg)
+.animate-2
+	transform: rotate(360deg)
 
 @import "media" // Всегда в конце
